@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Parallax-myself</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #links {
+            z-index: 1;
+            position: fixed;
+            right: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.801);
+            /* Line-height: 8px; */
+            padding: 10px;
+            Font-size: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #top,
+        #mid,
+        #bot {
+            color: white;
+            margin: 10px;
+        }
+
+        #logo {
+            z-index: 1;
+            position: fixed;
+            left: 30px;
+            background-color: rgba(255, 255, 255, 0.918);
+            line-height: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        #bg-full {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('./img/parkour-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #bg-full>h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 8px;
+        }
+
+        #bg-description {
+            padding: 50px 80px;
+        }
+
+        #bg-description>h2 {
+            text-align: center;
+            letter-spacing: 6px;
+        }
+
+        #bg-description>p {
+            text-align: justify;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+
+        #bg-1 {
+            position: relative;
+            height: 35vh;
+            background-image: url('./img/parkour-3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #bg-1>h1,
+        #bg-2>h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #eee;
+            letter-spacing: 8px;
+        }
+
+        #bg-text {
+            background-color: #333;
+            padding: 7.5vh 80px;
+            color: white;
+        }
+
+        #bg-2 {
+            position: relative;
+            height: 35vh;
+            background-image: url('./img/parkour-4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="#bg-full" style="text-decoration: none;"><span id="top">Top</span></a>
+        <a href="#bg-description" style="text-decoration: none;"><span id="mid">Mid</span></a>
+        <a href="#bg-2" style="text-decoration: none;"><span id="bot">Bot</span></a>
+    </div>
+    <div id="logo">
+        <h1>NAS</h1>
+    </div>
+    <div id="bg-full">
+        <h1>PARKOUR</h1>
+    </div>
+
+    <div id="bg-description">
+        <h2>PARKOUR</h2>
+        <p>
+            Pellentesque blandit congue orci nec pulvinar. Vestibulum pulvinar imperdiet purus, feugiat scelerisque erat
+            aliquet maximus. Donec nec laoreet diam. Aliquam venenatis posuere mauris in pretium. Nam iaculis enim ac
+            dolor pellentesque fringilla. Curabitur ac vestibulum augue. Fusce in faucibus arcu, egestas facilisis elit.
+            Mauris finibus congue leo vel volutpat. Donec placerat, nisi vel fermentum luctus, ligula ex porttitor mi,
+            congue ullamcorper lorem sem vel tellus. Curabitur facilisis porta ex, quis sagittis nibh sodales eu. Nullam
+            gravida ligula vitae purus lobortis viverra. Cras fringilla eget lacus sed pulvinar.
+        </p>
+    </div>
+
+    <div id="bg-1">
+        <h1>GO BEYOND THEM</h1>
+    </div>
+    <div id="bg-text">
+        There are no limits. There are plateaus, but you must not stay there, you must go beyond them.
+    </div>
+    <div id="bg-2">
+        <h1>NO LIMITS</h1>
+    </div>
+    <div id="bg-text">
+        There are no limits. There are plateaus, but you must not stay there, you must go beyond them.
+    </div>
+
+    <div id="bg-full">
+        <h1>PARKOUR</h1>
+    </div>
+</body>
+
+</html>
